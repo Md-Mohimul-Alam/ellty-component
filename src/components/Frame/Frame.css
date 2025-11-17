@@ -1,0 +1,52 @@
+.frame-container {
+  width: 375px;
+  height: 667px;
+  background: #ffffff;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.frame-header {
+  padding: 20px;
+  border-bottom: 1px solid #e5e5e5;
+  text-align: center;
+}
+
+.frame-header h1 {
+  font-size: 17px;
+  font-weight: 600;
+  color: #000000;
+  line-height: 22px;
+}
+
+.frame-grid {
+  flex: 1;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  align-content: start;
+}
+
+.frame-card {
+  width: 100%;
+  height: 60px;
+  background: #f8f9fa;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.frame-card-content {
+  text-align: left;
+}
+
+.frame-card-text {
+  font-size: 15px;
+  font-weight: 400;
+  color: #666666;
+  line-height: 20px;
+}

@@ -1,0 +1,35 @@
+.button-container {
+  width: 375px;
+  height: 667px;
+  background: #ffffff;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 20px;
+}
+
+.button-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.done-button {
+  width: 200px;
+  height: 50px;
+  background: #007AFF;
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.done-button:hover {
+  background: #0056CC;
+}
