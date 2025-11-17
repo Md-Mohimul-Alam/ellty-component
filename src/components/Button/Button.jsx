@@ -5,9 +5,15 @@ const Button = () => {
   return (
     <div className="button-container">
       <div className="button-content">
-        <button className="done-button">Done</button>
-        <button className="done-button">Done</button>
-        <button className="done-button">Done</button>
+        <div className="button">
+          <div className="button-text">Done</div>
+        </div>
+        <div className="button">
+          <div className="button-text">Done</div>
+        </div>
+        <div className="button">
+          <div className="button-text">Done</div>
+        </div>
       </div>
     </div>
   );

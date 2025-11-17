@@ -1,0 +1,132 @@
+.desktop-container {
+  width: 375px;
+  height: 667px;
+  background: #ffffff;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.desktop-header {
+  padding: 20px;
+  border-bottom: 1px solid #e5e5e5;
+  text-align: center;
+}
+
+.header-text {
+  font-size: 17px;
+  font-weight: 600;
+  color: #000000;
+  line-height: 22px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.checkbox-list {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center; /* Center the checkboxes */
+  justify-content: center; /* Center vertically */
+}
+
+.checkbox-item {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center horizontally */
+  padding: 10px 0;
+}
+
+/* Removed .checkbox-label styles since we're not using text labels */
+
+.checkbox-display {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Base checkbox styles */
+.checkbox-bg {
+  width: 25px;
+  height: 25px;
+  border-radius: 6px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.checkbox-border {
+  width: 25px;
+  height: 25px;
+  border-radius: 6px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid;
+}
+
+.check-icon {
+  position: absolute;
+  z-index: 2;
+}
+
+/* Specific states */
+.default-border {
+  border-color: #CDCDCD;
+  opacity: 0.6;
+}
+
+.gray-border {
+  border-color: #BDBDBD;
+}
+
+.blue-overlay {
+  width: 28px;
+  height: 28px;
+  border-radius: 7.5px;
+  border: 3px solid #2469F6;
+  position: absolute;
+  top: -1.5px;
+  left: -1.5px;
+  opacity: 0.1;
+}
+
+.blue-overlay-full {
+  width: 28px;
+  height: 28px;
+  border-radius: 7.5px;
+  background: #2469F6;
+  border: 3px solid #2469F6;
+  position: absolute;
+  top: -1.5px;
+  left: -1.5px;
+  opacity: 0.1;
+}
+
+.opacity-10 {
+  opacity: 0.1;
+}
+
+.blue-press {
+  background: #5087F8;
+}
+
+.blue-main {
+  background: #2469F6;
+}
+
+.gray-light {
+  stroke: #E3E3E3;
+}
+
+.gray-dark {
+  stroke: #878787;
+}
+
+.white {
+  stroke: white;
+}

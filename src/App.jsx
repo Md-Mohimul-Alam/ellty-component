@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import './App.css';
 import Button from './components/Button/Button';
-import Desktop from './components/Desktop/Desktop';
-import FrameA45381 from './components/Frame/Frame';
+import CheckBox from './components/CheckBox/CheckBox';
+import Frame from './components/Frame/Frame';
 import AllPages from './components/AllPages/AllPages';
 
 function App() {
@@ -10,8 +10,8 @@ function App() {
 
   const screens = {
     button: <Button />,
-    desktop: <Desktop />,
-    frame: <FrameA45381 />,
+    CheckBox: <CheckBox />,
+    frame: <Frame />,
     allpages: <AllPages />
   };
 
@@ -29,22 +29,22 @@ function App() {
           Button
         </button>
         <button 
-          className={`nav-btn ${currentScreen === 'desktop' ? 'active' : ''}`}
-          onClick={() => setCurrentScreen('desktop')}
+          className={`nav-btn ${currentScreen === 'CheckBox' ? 'active' : ''}`}
+          onClick={() => setCurrentScreen('CheckBox')}
         >
-          Desktop
-        </button>
-        <button 
-          className={`nav-btn ${currentScreen === 'frame' ? 'active' : ''}`}
-          onClick={() => setCurrentScreen('frame')}
-        >
-          Frame A4:5381
+          CheckBox
         </button>
         <button 
           className={`nav-btn ${currentScreen === 'allpages' ? 'active' : ''}`}
           onClick={() => setCurrentScreen('allpages')}
         >
           All pages
+        </button>
+        <button 
+          className={`nav-btn ${currentScreen === 'frame' ? 'active' : ''}`}
+          onClick={() => setCurrentScreen('frame')}
+        >
+          Frame A4:5381
         </button>
       </div>
     </div>
